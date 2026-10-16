@@ -70,9 +70,9 @@ lines terminated by '\n'
 ignore 1 rows;
 select * from customer_details;
 
-truncate table creditcard_details;
+--truncate table creditcard_details;
 select * from creditcard_details;
-truncate table customer_details;
+--truncate table customer_details;
 
 
 load data infile
@@ -98,3 +98,4 @@ fields terminated by ','
 lines terminated by '\n'
 ignore 1 rows;
 select * from customer_details;
+select count(*) from creditcard_details;
